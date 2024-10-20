@@ -6,23 +6,21 @@ def read(fname):
 
 setup(
     name = 'PyRAG',
-    version= '1.0',
+    version= '1.1',
     author= 'Sulaiman Shamasna',
     author_email= 'suleiman.shamasneh@gmail.com',
     url= 'https://github.com/sulaiman-shamasna/PyRAG',
     description= 'xx',
-    packages=['xx'],
+    packages=['pyrag', 'pyrag/examples'],
     long_description=read('README.md'),
     entry_points = {
         'console_scripts': [
-            'method1=pyrag.method1:main',
-            'method2=pyrag.method2:main'
+            'query_transformation=pyrag.examples.query_transformation:main',
+            'rag_system=pyrag.examples.rag_system:main',
         ]
     },
     install_requires=[
-        'torch',
-        'X',
-        '...'
+        'numpy'
 
     ]
 
