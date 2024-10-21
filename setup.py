@@ -17,6 +17,7 @@ setup(
         'console_scripts': [
             'query_transformation=pyrag.examples.query_transformation:main',
             'rag_system=pyrag.examples.rag_system:main',
+            'adaptive_retrieval=pyrag.examples.adaptive_retrieval:main',
         ]
     },
     install_requires=[
