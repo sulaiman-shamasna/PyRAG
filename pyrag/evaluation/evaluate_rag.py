@@ -22,7 +22,7 @@ from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from langchain_openai import ChatOpenAI
 
 
-from helper_functions import (
+from pyrag.utils.helper_functions import (
     create_question_answer_from_context_chain,
     answer_question_from_context,
     retrieve_context_per_question
