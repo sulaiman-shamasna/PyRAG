@@ -4,7 +4,6 @@ from langchain.prompts import PromptTemplate
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from a .env file
 load_dotenv()
 
 # Set the OpenAI API key environment variable
