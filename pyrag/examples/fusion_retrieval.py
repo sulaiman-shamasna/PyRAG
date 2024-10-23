@@ -103,7 +103,7 @@ def fusion_retrieval(vectorstore, bm25, query: str, k: int = 5, alpha: float = 0
 
 def main():
     parser = argparse.ArgumentParser(description="Process PDF files and perform fusion retrieval.")
-    parser.add_argument('--folder', type=str, required=True, help='Folder containing PDF files')
+    parser.add_argument('--folder', type=str, default='data/', help='Folder containing PDF files')
     parser.add_argument('--query', type=str, default='What is the attention mechanism?', help='Query string for retrieval')
     parser.add_argument('--k', type=int, default=5, help='Number of documents to retrieve')
     parser.add_argument('--alpha', type=float, default=0.5, help='Weight for vector search scores')
